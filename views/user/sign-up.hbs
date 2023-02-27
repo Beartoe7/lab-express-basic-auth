@@ -1,4 +1,4 @@
-<form action="/auth/login" method="POST" class="w-50 mx-auto">
+<form action="/auth/signup" method="POST" class="w-50 mx-auto">
     {{#if mensajeError}}
         <div class="alert alert-danger" role="alert">
             {{mensajeError}}
@@ -12,6 +12,10 @@
         <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password">
         <label for="floatingPassword">Password</label>
     </div>
-    <button type="submit" class="btn btn-primary">Sign In</button>
+    <div class="form-floating mb-3">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="passwordRepeat">
+        <label for="floatingPassword">Repeat password</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Sign up</button>
     <a class="btn btn-link" href="/user/login">Ja estic registrada</a>
 </form>
